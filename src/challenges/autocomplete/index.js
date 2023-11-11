@@ -1,4 +1,4 @@
-import { useState, useEffect, } from "react";
+import { useState, useEffect } from "react";
 
 import { useLazySearchGithubUsersQuery } from "../../app/api";
 
@@ -88,6 +88,12 @@ export const AutoComplete = () => {
           </button>
         </div>
       </div>
+      <p className="text-xs fixed bottom-2 left-2 bg-gray-100 text-gray-600 p-2 text-center">
+        Note: Should you encounter any issues with API requests, it might be due
+        to GitHub's rate limiting on their public API for unauthenticated
+        requests. This typically occurs after exceeding their quota for free
+        tier usage. Please try again after sometime. 
+      </p>
     </div>
   );
 };
