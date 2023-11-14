@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-import { AutoComplete } from "./challenges";
+import { AutoComplete, TextMetrics } from "./challenges";
 import { Home } from "./pages";
 
 
@@ -10,7 +10,8 @@ function App() {
       <div className="light">
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/challenges/auto-complete" element={<AutoComplete />} />
+          <Route exact path="/challenges/auto-complete" element={<AutoComplete />} />
+          <Route exact path="/challenges/text-metrics" element={<TextMetrics />} />
         </Routes>
       </div>
     </Router>
