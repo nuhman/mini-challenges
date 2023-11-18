@@ -13,7 +13,8 @@ This repository is structured as a simple Create React App (CRA). Each directory
  * Install package dependencies using `npm i`. 
  * Run using `npm run start`.
   
-**Learn and Experiment**: Feel free to modify and experiment with the code and write your own solutions
+**Learn and Experiment**: Feel free to modify and experiment with the code and write your own solutions  
+View implemented challenges [here](https://main--gentle-sherbet-a9a791.netlify.app/). 
 
 ### Challenges List
 
