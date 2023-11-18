@@ -18,4 +18,5 @@ This repository is structured as a simple Create React App (CRA). Each directory
 ### Challenges List
 
 * [Type-Ahead or Auto-Complete Input](https://github.com/nuhman/mini-challenges/tree/main/src/challenges/autocomplete)  
+* [Find Text Metrics](https://github.com/nuhman/mini-challenges/tree/main/src/challenges/textmetrics)  
 
