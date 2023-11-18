@@ -26,21 +26,22 @@ export const TextMetrics = () => {
       //paragraphs
       const _paragraphs = value.split(/\n\n+/).filter((val) => val.trim());
 
+      // total time required to read the text (in minutes & seconds)
+      //calculations assume that the average reading speed of an adult is 200 words per minute
+      const totalMinsRequired = (_words?.length || 0) / 200;
+      const readingTime = `${Math.floor(totalMinsRequired)}m:${
+        (totalMinsRequired * 60) % 60
+      }s`;
+
       setMetrics({
         words: _words?.length || 0,
         characters: value.length || 0,
         sentences: _sentences?.length || 0,
         paragraphs: _paragraphs.length,
         readabilityScore: 0,
-        readingTime: 0,
+        readingTime,
       });
 
-      console.log({
-        value,
-        words: _words,
-        sentences: _sentences,
-        paragraphs: _paragraphs,
-      });
     } catch (e) {
       console.log("error occured while analyzing text", e);
       resetMetrics();
